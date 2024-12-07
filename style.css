@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+}
+
+header {
+	background-color: #0b1c51;
+	margin-bottom: 40px;
+	padding: 10px;
+}
+
+header h1 {
+	font-family: "Gochi Hand";
+	font-size: 52px;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}
+
+header nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+header nav ul {
+	display: flex;
+	padding: 0;
+	list-style: none;
+	gap: 15px; /* Adds spacing between navigation links */
+}
+
+header nav ul li a {
+	font-family: Montserrat;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+header nav ul li a:hover {
+	color: #bdbdbd;
+}
+
+/* Desktop view styling */
+@media (min-width: 600px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 30px;
+	}
+
+	header h1 {
+		font-size: 48px; /* Adjusted font size for desktop */
+		text-align: left; /* Aligns the title to the left on larger screens */
+	}
+
+	header nav {
+		margin: 0;
+	}
+
+	header nav ul {
+		gap: 20px; /* Slightly larger spacing between links for desktop */
+	}
+}
